@@ -25,7 +25,7 @@ public class Tablas {
     public void mostrarMenu() {
         while (true) {
 
-            System.out.println("Ingrese su nombre de usuario: ");
+            System.out.println("Bienvenido\nIngrese su nombre de usuario: ");
             String nombre = entrada.nextLine();
 
             System.out.println("==Tablas de multiplicar==");
@@ -34,9 +34,11 @@ public class Tablas {
             int opcion = entrada.nextInt();
             switch (opcion) {
                 case 1:
+                    System.out.println("Esta es su tabla: "+nombre);
                     mostarUnaTabla(1);
                     break;
                 case 2:
+                    System.out.println("Esta son sus tablas: "+nombre);
                     mostarVariasTablas(5);
                     break;
                 default:
