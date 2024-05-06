@@ -8,7 +8,11 @@ public class TablasMultiplicarApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TablasMultiplicarApplication.class, args);
+
 		Tablas tablas = new Tablas();
-		tablas.mostarTablas(3);
+
+		tablas.mostarUnaTabla(1);
+		tablas.mostarVariasTablas(5);
+		//tablas.mostrarMenu();
 	}
 }
